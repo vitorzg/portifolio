@@ -20,6 +20,11 @@ header{
     border-bottom-width: 1px;
     border-color: hsl(216 34% 17%);
     position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(3, 7, 18, 0.692);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
 }
 
 .font-pri{
@@ -47,6 +52,7 @@ section{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 80vh;
 }
 
 .logoHome{
@@ -81,7 +87,7 @@ section{
     flex-direction: column;
     align-items: center;
     width: 90%;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
 }
 
@@ -192,13 +198,53 @@ footer p {
     font-size: 16px;
 }
 
-  @keyframes cursor-blink {
+#about{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.box-educ{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    background-color: rgb(16, 23, 41);
+    width: 95%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(216 34% 17%);
+    margin-top: 20px;
+    transition: all 0.2s;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+.p2{
+    color: rgb(118, 122, 131);
+}
+
+.box-educ:hover{
+    border-color: rgb(255, 255, 255);
+
+}
+
+
+@keyframes cursor-blink {
     0%, 100% {
       opacity: 1;
     }
     50% {
       opacity: 0;
     }
-  }
+}
 
 
