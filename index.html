@@ -1,116 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Vitor Zucon | Portfólio</title>
 </head>
 <body>
-    <header>
-        <div class="logoHome">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal h-6 w-6" data-lov-id="src/components/Navbar.tsx:12:12" data-lov-name="Terminal" data-component-path="src/components/Navbar.tsx" data-component-line="12" data-component-file="Navbar.tsx" data-component-name="Terminal" data-component-content="%7B%22className%22%3A%22h-6%20w-6%22%7D"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
-            <p class="font-pri">Vitor Zucon</p>
-        </div>
-        <div class="navbar font-sec">
-            <a href="#about">Sobre</a>
-            <a href="#projects">Projetos</a>
-            <a href="#exp">Experiência</a>
-            <a href="#contact">Contato</a>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logoHome">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
+                <p class="font-pri">Vitor Zucon</p>
+            </div>
+            <nav class="navbar font-sec">
+                <a href="#about">Sobre</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projetos</a>
+                <a href="#exp">Experiência</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <a class="btn-outline font-sec" href="#contact">Vamos conversar</a>
         </div>
     </header>
+
     <main>
-        <section>
-            <div id="intro">
-                <h1 class="font-pri">Backend Developer<strong><span class="animate-cursor-blink">▌</span></strong></h1>
-                <p class="font-sec" id="intro-desc">Especializado em desenvolver aplicações de servidor e APIs robustas e escaláveis com Java Spring Boot e Python, bem como aplicativos mobile usando Dart com Flutter.</p>
-                <div class="box font-pri">
-                    <p>$ whoami <br>Vitor Zucon</p>
-                    <p>$ skills <br>['Java', 'Spring Boot', 'Dart', 'Flutter', 'PostgreSQL', 'MongoDB', 'FireBird']</p>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow font-sec">Disponível para novos projetos</p>
+                    <h1 class="font-pri">Backend Developer<strong><span class="animate-cursor-blink">▌</span></strong></h1>
+                    <p class="font-sec intro-desc">Especializado em desenvolver aplicações de servidor e APIs robustas e escaláveis com Java Spring Boot e Python, bem como aplicativos mobile usando Dart com Flutter.</p>
+                    <div class="box font-pri">
+                        <p>$ whoami <br>Vitor Zucon</p>
+                        <p>$ skills <br>['Java', 'Spring Boot', 'Dart', 'Flutter', 'PostgreSQL', 'MongoDB', 'FireBird']</p>
+                    </div>
+                    <div class="div-buttons">
+                        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});" class="btn-pri font-sec">Contactar</button>
+                        <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});" class="btn-sec">Ler mais <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down ml-2 h-4 w-4"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></button>
+                    </div>
                 </div>
-                <div class="div-buttons">
-                    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});"" class="btn-pri font-sec">Contactar</button>
-                    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});" class="btn-sec">Ler mais <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down ml-2 h-4 w-4" data-lov-id="src/components/Hero.tsx:35:16" data-lov-name="ArrowDown" data-component-path="src/components/Hero.tsx" data-component-line="35" data-component-file="Hero.tsx" data-component-name="ArrowDown" data-component-content="%7B%22className%22%3A%22ml-2%20h-4%20w-4%22%7D"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></button>
+                <div class="hero-card">
+                    <h2 class="font-pri">Stack principal</h2>
+                    <p class="font-sec">Foco em arquitetura limpa, APIs seguras e observabilidade desde o primeiro commit.</p>
+                    <div class="badges">
+                        <span class="badge font-pri">Java</span>
+                        <span class="badge font-pri">Spring Boot</span>
+                        <span class="badge font-pri">Python</span>
+                        <span class="badge font-pri">PostgreSQL</span>
+                        <span class="badge font-pri">Docker</span>
+                    </div>
+                    <div class="hero-metrics">
+                        <div>
+                            <p class="metric-number font-pri">+3 anos</p>
+                            <p class="metric-label font-sec">Experiência em backend</p>
+                        </div>
+                        <div>
+                            <p class="metric-number font-pri">+12</p>
+                            <p class="metric-label font-sec">Projetos entregues</p>
+                        </div>
+                        <div>
+                            <p class="metric-number font-pri">100%</p>
+                            <p class="metric-label font-sec">Foco em qualidade</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="about">
-            <div>
-                <h2 class="font-pri">Sobre Mim</h2>
-                <p class="font-sec">Olá! Sou Vitor Zucon, um desenvolvedor backend apaixonado, com experiência na criação de aplicações de servidor e APIs eficientes, escaláveis e fáceis de manter. <br> <br>    
-                    Com uma base sólida em Java com Spring Boot, Python e desenvolvimento móvel com Dart e Flutter, gosto de resolver problemas complexos e implementar soluções elegantes. <br><br>
-                    Quando não estou codando, você pode me encontrar explorando novas tecnologias, contribuindo para projetos de código aberto ou compartilhando conhecimento com a comunidade de desenvolvedores.</p>
-            </div>
-            <div class="box-educ">
-                <h3 class="font-pri">Educação</h3><br>
-                <p class="font-sec" style="font-size: 16px; margin: 0;">Análise e Desenvolvimento de Sistemas</p>
-                <p class="font-sec p2" style="font-size: 14px; margin: 0;">UniCesumar (2022 - 2025)</p>
-                <br>
-                <h3 class="font-pri">Certificados</h3><br>
-                <p class="font-sec" style="font-size: 16px; margin: 0;">Gerenciamento de Processos</p>
-                <p class="font-sec p2" style="font-size: 14px; margin: 0;">Pipefy Academy (2023)</p>
-                <p class="font-sec" style="font-size: 16px; margin: 0;">Linguagem de Programação Java - Básico e Avançado</p>
-                <p class="font-sec p2" style="font-size: 14px; margin: 0;">Fundação Bradesco (2023)</p>
+
+        <section id="about" class="section">
+            <div class="container two-columns">
+                <div>
+                    <h2 class="font-pri">Sobre Mim</h2>
+                    <p class="font-sec">Olá! Sou Vitor Zucon, um desenvolvedor backend apaixonado, com experiência na criação de aplicações de servidor e APIs eficientes, escaláveis e fáceis de manter.</p>
+                    <p class="font-sec">Com uma base sólida em Java com Spring Boot, Python e desenvolvimento móvel com Dart e Flutter, gosto de resolver problemas complexos e implementar soluções elegantes.</p>
+                    <p class="font-sec">Quando não estou codando, você pode me encontrar explorando novas tecnologias, contribuindo para projetos de código aberto ou compartilhando conhecimento com a comunidade de desenvolvedores.</p>
+                </div>
+                <div class="box-educ">
+                    <h3 class="font-pri">Educação</h3>
+                    <p class="font-sec">Análise e Desenvolvimento de Sistemas</p>
+                    <p class="font-sec p2">UniCesumar (2022 - 2025)</p>
+                    <div class="divider"></div>
+                    <h3 class="font-pri">Certificados</h3>
+                    <p class="font-sec">Gerenciamento de Processos</p>
+                    <p class="font-sec p2">Pipefy Academy (2023)</p>
+                    <p class="font-sec">Linguagem de Programação Java - Básico e Avançado</p>
+                    <p class="font-sec p2">Fundação Bradesco (2023)</p>
+                </div>
             </div>
         </section>
-        <section id="projects">
-            <h2 class="font-pri" style="text-align: start;">Projetos em Destaque</h2>
-            <div style="width: 100%; height: 100%;display: flex; flex-direction: column;">
-                <div style="width: 100%; height: 100%;display: flex; flex-direction: row; justify-content: center;">
-                    <div class="box-proj">
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="font-pri">Skills & Ferramentas</h2>
+                    <p class="font-sec">Organização das competências que mais uso no dia a dia, da construção de APIs à entrega contínua.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3 class="font-pri">Backend</h3>
+                        <p class="font-sec">Java, Spring Boot, Python, APIs REST, integração com gateways de pagamento.</p>
+                        <div class="badges">
+                            <span class="badge font-pri">Java</span>
+                            <span class="badge font-pri">Spring</span>
+                            <span class="badge font-pri">Python</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-pri">Dados</h3>
+                        <p class="font-sec">Modelagem relacional, migrações, performance e observabilidade de banco.</p>
+                        <div class="badges">
+                            <span class="badge font-pri">PostgreSQL</span>
+                            <span class="badge font-pri">MongoDB</span>
+                            <span class="badge font-pri">Firebird</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-pri">Mobile & Cloud</h3>
+                        <p class="font-sec">Integração mobile com Flutter e serviços de nuvem para deploy automatizado.</p>
+                        <div class="badges">
+                            <span class="badge font-pri">Flutter</span>
+                            <span class="badge font-pri">Docker</span>
+                            <span class="badge font-pri">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-pri">Soft Skills</h3>
+                        <p class="font-sec">Comunicação clara, documentação, trabalho em equipe e foco em resultados.</p>
+                        <div class="badges">
+                            <span class="badge font-pri">Colaboração</span>
+                            <span class="badge font-pri">Mentoria</span>
+                            <span class="badge font-pri">Planejamento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="font-pri">Projetos em Destaque</h2>
+                    <p class="font-sec">Alguns trabalhos recentes que mostram o meu foco em performance e experiência do usuário.</p>
+                </div>
+                <div class="cards-grid">
+                    <article class="box-proj">
                         <h3 class="font-pri">Riftbound: Point Counter</h3>
-                        <p class="font-sec">Um Aplicativo Mobile para administrar a contagem de pontos de conqueror e holding de uma partida de Riftbound, podendo ser de 1 a 4 jogadores. Adição de monetização com Adsense.</p>
+                        <p class="font-sec">Aplicativo mobile para administrar a contagem de pontos de conqueror e holding de uma partida de Riftbound, com suporte para 1 a 4 jogadores.</p>
                         <div class="badges">
                             <span class="badge font-pri">Java</span>
                             <span class="badge font-pri">Android</span>
+                            <span class="badge font-pri">AdSense</span>
                         </div>
-                        <br>
-                        <div style="display: flex; flex-direction: row;align-items: center; gap: 5%; width: 100%;">
-                            <a href="#" class="proj font-sec"><img width="15px" src="https://cdn.simpleicons.org/gitHub/white"/> Code</a>
-                            <a href="#" class="proj2 font-sec"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link h-4 w-4 mr-2" data-lov-id="src/components/Projects.tsx:66:18" data-lov-name="ExternalLink" data-component-path="src/components/Projects.tsx" data-component-line="66" data-component-file="Projects.tsx" data-component-name="ExternalLink" data-component-content="%7B%22className%22%3A%22h-4%20w-4%20mr-2%22%7D"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg> Live Preview</a>
+                        <div class="card-actions">
+                            <a href="#" class="proj font-sec"><img width="15px" src="https://cdn.simpleicons.org/gitHub/white" alt=""/> Code</a>
+                            <a href="#" class="proj2 font-sec">Live Preview</a>
+                        </div>
+                    </article>
+                    <article class="box-proj">
+                        <h3 class="font-pri">Payments Hub</h3>
+                        <p class="font-sec">Plataforma de integração de provedores de pagamento com APIs padronizadas e monitoramento em tempo real.</p>
+                        <div class="badges">
+                            <span class="badge font-pri">Spring Boot</span>
+                            <span class="badge font-pri">Kafka</span>
+                            <span class="badge font-pri">PostgreSQL</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="proj font-sec"><img width="15px" src="https://cdn.simpleicons.org/gitHub/white" alt=""/> Code</a>
+                            <a href="#" class="proj2 font-sec">Case Study</a>
+                        </div>
+                    </article>
+                    <article class="box-proj">
+                        <h3 class="font-pri">Dashboard de Observabilidade</h3>
+                        <p class="font-sec">Painel com métricas de saúde do sistema, alertas automáticos e insights de performance.</p>
+                        <div class="badges">
+                            <span class="badge font-pri">Python</span>
+                            <span class="badge font-pri">Grafana</span>
+                            <span class="badge font-pri">Prometheus</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="#" class="proj font-sec"><img width="15px" src="https://cdn.simpleicons.org/gitHub/white" alt=""/> Code</a>
+                            <a href="#" class="proj2 font-sec">Live Preview</a>
+                        </div>
+                    </article>
+                </div>
+                <a class="seemore font-sec" href="#">Ver Todos os Projetos</a>
+            </div>
+        </section>
+
+        <section id="exp" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="font-pri">Experiência Profissional</h2>
+                    <p class="font-sec">Caminho profissional com foco em soluções escaláveis para o mercado de pagamentos.</p>
+                </div>
+                <div class="timeline">
+                    <div class="box-exp">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="font-pri">Desenvolvedor Backend Java - Jr</h3>
+                                <p class="font-sec">PoolPay</p>
+                            </div>
+                            <span class="chip font-sec">2023 - Atual</span>
+                        </div>
+                        <p class="font-sec">Startup do ramo payments as a service (PaaS) com produto para facilitar a integração de diferentes provedores de meios de pagamento. Atuação no desenvolvimento de novas features, correção de bugs e redução de débitos técnicos.</p>
+                        <h3 class="font-pri">Competências Técnicas</h3>
+                        <div class="badges">
+                            <span class="badge font-pri">Java</span>
+                            <span class="badge font-pri">Spring</span>
+                            <span class="badge font-pri">Remoto</span>
+                            <span class="badge font-pri">PostgreSQL</span>
+                            <span class="badge font-pri">Micro-serviços</span>
+                            <span class="badge font-pri">Design Patterns</span>
                         </div>
                     </div>
-                    <div class="box-proj"></div>
-                </div>
-            </div>
-            <a class="seemore font-sec" href="#">Ver Todos os Projetos</a>
-        </section>
-        <section id="exp">
-            <h2 class="font-pri">Exériência Profissional</h2>
-            <div style="display: flex; flex-direction: column; width: 100%; align-items: center;">
-                <div class="box-exp">
-                    <h3 class="font-pri">Desenvolvedor Backend Java - JR</h3>
-                    <p class="font-pri">PoolPay</p>
-                    <p class="font-sec">Uma startup de ramo payments as a service (PAAS) com um produot para facilitar a integração de diferentes provedores de meios de pagamentos. Tinha como principal função auxiliar o time de desenvolvimento do lado do servidor a criar novas features de maneira limpra e planejada, bem como solução de bugs e débitos técnicos da aplicação.</p>
-                    <h3 class="font-pri">Competências Técnicas:</h3>
-                    <br>
-                    <div class="badges">
-                        <span class="badge font-pri">Java</span>
-                        <span class="badge font-pri">Spring</span>
-                        <span class="badge font-pri">Remoto</span>
-                        <span class="badge font-pri">PostgreSQL</span>
-                        <span class="badge font-pri">Micro-serviços</span>
-                        <span class="badge font-pri">Design Patterns</span>
+                    <div class="box-exp">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="font-pri">Freelancer Backend</h3>
+                                <p class="font-sec">Projetos sob demanda</p>
+                            </div>
+                            <span class="chip font-sec">2021 - 2023</span>
+                        </div>
+                        <p class="font-sec">Criação de APIs, automações e integração com plataformas de terceiros para negócios locais e startups em crescimento.</p>
+                        <div class="badges">
+                            <span class="badge font-pri">APIs REST</span>
+                            <span class="badge font-pri">Integrações</span>
+                            <span class="badge font-pri">Documentação</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <h2 class="font-pri">Contate-me</h2>
-            <div></div>
+
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="font-pri">Como posso ajudar</h2>
+                    <p class="font-sec">Serviços focados em trazer confiabilidade, performance e rapidez para o seu produto.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3 class="font-pri">APIs escaláveis</h3>
+                        <p class="font-sec">Arquitetura de APIs seguras e documentadas com atenção à performance.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-pri">Integrações complexas</h3>
+                        <p class="font-sec">Conexão com gateways de pagamento, ERPs e serviços externos.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-pri">Suporte ao time</h3>
+                        <p class="font-sec">Onboarding, documentação e apoio técnico para equipes internas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-grid">
+                <div>
+                    <h2 class="font-pri">Vamos conversar</h2>
+                    <p class="font-sec">Me conte sobre seu projeto ou desafio técnico. Respondo em até 24 horas.</p>
+                    <div class="contact-info">
+                        <div>
+                            <span class="font-sec">Email</span>
+                            <p class="font-pri">vitorzucon@email.com</p>
+                        </div>
+                        <div>
+                            <span class="font-sec">Localização</span>
+                            <p class="font-pri">Maringá, PR - Brasil</p>
+                        </div>
+                        <div>
+                            <span class="font-sec">Disponibilidade</span>
+                            <p class="font-pri">Remoto ou híbrido</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="proj font-sec">Github</a>
+                        <a href="#" class="proj font-sec">LinkedIn</a>
+                        <a href="#" class="proj font-sec">Currículo</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <label class="font-sec" for="name">Nome</label>
+                    <input id="name" type="text" placeholder="Seu nome">
+                    <label class="font-sec" for="email">Email</label>
+                    <input id="email" type="email" placeholder="Seu melhor email">
+                    <label class="font-sec" for="message">Mensagem</label>
+                    <textarea id="message" rows="5" placeholder="Conte um pouco sobre o projeto"></textarea>
+                    <button type="submit" class="btn-pri font-sec">Enviar mensagem</button>
+                </form>
+            </div>
         </section>
     </main>
+
     <footer>
-        <div id="footer-id">
-            <p class="font-pri">Vitor Zucon</p>
-            <p class="font-sec">Backend Developer</p>
-        </div>
-        <div id="footer-cr">
-            <p class="font-sec">© 2025 All rights reserved.</p>
-        </div>
-        <div id="footer-social" class="font-sec">
-            <a href="#">Github</a>
-            <a href="#">Linkedin</a>
+        <div class="container footer-content">
+            <div id="footer-id">
+                <p class="font-pri">Vitor Zucon</p>
+                <p class="font-sec">Backend Developer</p>
+            </div>
+            <div id="footer-cr">
+                <p class="font-sec">© 2025 All rights reserved.</p>
+            </div>
+            <div id="footer-social" class="font-sec">
+                <a href="#">Github</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Email</a>
+            </div>
         </div>
     </footer>
 </body>
